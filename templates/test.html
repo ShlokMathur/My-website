@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        .thank-you-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        .thank-you {
+            background: white;
+            color: #333;
+            padding: 2rem 4rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .thank-you h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .thank-you p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thank-you-container">
+        <div class="thank-you">
+            <h1>Thank You!</h1>
+            <p>Thank you for visiting my website.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}

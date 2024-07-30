@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects and Activities</title>
+    <style>
+        .bg-gradient {
+            background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        }
+        .text-gradient {
+            background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-content {
+            background: white;
+            color: #333;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient">
+    <main class="container mx-auto py-6">
+        <section id="projects" class="my-6">
+            <h2 class="text-4xl font-bold mb-4 text-gradient text-center">Projects</h2>
+            <div class="section-content">
+                <h3 class="text-2xl font-semibold text-indigo-600">Drone Detection Model (Sep 2023 - Feb 2024)</h3>
+                <ul class="list-disc ml-6 text-lg">
+                    <li class="text-pink-500">Employed Pandas and NumPy for sophisticated data augmentation, expanding the drone detection dataset to 15,000+ images.</li>
+                    <li class="text-purple-500">Acquired practical insights in Pandas and NumPy, data augmentation proficiency with a 15% boost in efficiency.</li>
+                    <li class="text-indigo-500"><a href="https://colab.research.google.com/drive/15PtolcYsG7hWqfVigsk6_G8Fpbfh3n-2?usp=sharing" class="text-blue-500">Project Link</a></li>
+                </ul>
+            </div>
+            <div class="section-content">
+                <h3 class="text-2xl font-semibold text-indigo-600">Cervical Cancer Classification Analysis (Sep 2023 - Feb 2024)</h3>
+                <ul class="list-disc ml-6 text-lg">
+                    <li class="text-pink-500">Analyzed cervical cancer risk; processed and visualized data, achieved 95% accuracy in risk prediction.</li>
+                    <li class="text-purple-500">Enhanced efficiency by 40% in data cleaning, visualization, and model evaluation using Pandas and Matplotlib.</li>
+                    <li class="text-indigo-500"><a href="https://colab.research.google.com/drive/15PtolcYsG7hWqfVigsk6_G8Fpbfh3n-2?usp=sharing" class="text-blue-500">View Notebook</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="activities" class="my-6">
+            <h2 class="text-4xl font-bold mb-4 text-gradient text-center">Activities</h2>
+            <div class="section-content">
+                <h3 class="text-2xl font-semibold text-pink-600">National Social Service, VIT University, Bhopal</h3>
+                <p class="text-lg">Head of Society (Sep 2022 – Aug 2023)</p>
+                <ul class="list-disc ml-6 text-lg">
+                    <li class="text-green-500">Coordinated student files, troop security, and led 400+ volunteers.</li>
+                    <li class="text-blue-500">Organized 2 blood donation camps, facilitated 2 real-world experiences, engaging with 1000+ rural people.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="my-6">
+            <h2 class="text-4xl font-bold mb-4 text-gradient text-center">Contact</h2>
+            <div class="section-content text-center">
+                <p class="text-lg">Feel free to reach out via <a href="mailto:Shlok.mathur2020@vitbhopal.ac.in" class="text-blue-500">email</a> or connect with me on <a href="http://www.linkedin.com/in/shlokmathur14" class="text-blue-500">LinkedIn</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+{% endblock %}

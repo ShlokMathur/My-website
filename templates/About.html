@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title %}About Me{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand" href="#">Shlok Mathur</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#activities">Activities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header class="bg-white shadow p-6 mb-4">
+    <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-bold">Shlok Mathur</h1>
+        <p class="text-2xl text-gray-600">Data Analyst</p>
+        <p class="text-gray-600">Jaipur, Rajasthan | P: +91 6350207540 | <a href="mailto:Shlok.mathur2020@vitbhopal.ac.in">Shlok.mathur2020@vitbhopal.ac.in</a></p>
+        <div class="mt-4">
+            <a href="http://www.linkedin.com/in/shlokmathur14" class="btn btn-primary mx-2">LinkedIn</a>
+            <a href="https://github.com/ShlokMathur" class="btn btn-dark mx-2">GitHub</a>
+        </div>
+    </div>
+</header>
+
+<main class="container mx-auto">
+    <section id="education" class="my-6">
+        <h2 class="text-3xl font-bold mb-4 text-center">Education</h2>
+        <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold">Vellore Institute of Technology, Bhopal, MP</h3>
+            <p class="text-lg">Major in Computer Science; Minors in Mathematics</p>
+            <p class="text-gray-600">Expected May 2024 | Cumulative GPA: 7.96/10</p>
+        </div>
+    </section>
+
+    <section id="skills" class="my-6">
+        <h2 class="text-3xl font-bold mb-4 text-center">Technical Skills</h2>
+        <div class="bg-white shadow p-6 rounded-lg">
+            <ul class="list-disc ml-6 text-lg">
+                <li>SQL, PowerBI, Ms Excel</li>
+                <li>Proficient in Python, Latex</li>
+            </ul>
+        </div>
+        <h2 class="text-3xl font-bold mb-4 text-center mt-6">Certifications & Training</h2>
+        <div class="bg-white shadow p-6 rounded-lg">
+            <ul class="list-disc ml-6 text-lg">
+                <li>Salesforce Ai Associate</li>
+                <li>Google Data Analytics</li>
+                <li>Microsoft Certified: Data Analyst Associate with Power BI</li>
+                <li>Applied Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="activities" class="my-6">
+        <h2 class="text-3xl font-bold mb-4 text-center">Activities</h2>
+        <div class="bg-white shadow p-6 rounded-lg">
+            <h3 class="text-2xl font-semibold">National Social Service, VIT University, Bhopal</h3>
+            <p class="text-lg">Head of Society (Sep 2022 – Aug 2023)</p>
+            <ul class="list-disc ml-6 text-lg">
+                <li>Coordinated student files, troop security, and led 400+ volunteers.</li>
+                <li>Organized 2 blood donation camps, facilitated 2 real-world experiences, engaging with 1000+ rural people.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="my-6">
+        <h2 class="text-3xl font-bold mb-4 text-center">Contact</h2>
+        <div class="bg-white shadow p-6 rounded-lg text-center">
+            <p class="text-lg">Feel free to reach out via <a href="mailto:Shlok.mathur2020@vitbhopal.ac.in" class="text-blue-500">email</a> or connect with me on <a href="http://www.linkedin.com/in/shlokmathur14" class="text-blue-500">LinkedIn</a>.</p>
+        </div>
+    </section>
+
+    <section id="thank-you" class="my-6">
+        <h2 class="text-3xl font-bold mb-4 text-center">Thank You</h2>
+        <div class="bg-white shadow p-6 rounded-lg text-center">
+            <p class="text-lg">Thank you for visiting my website.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}

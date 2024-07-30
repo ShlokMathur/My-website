@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% block title %}phone{% endblock title %}
+{% block body %}
+{% block head %}<title>phone Us Form</title>{% endblock head %}
+
+<body>
+    <link rel="/static/styles2.css" href="styles2.css">
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="text-center mb-5">
+                        <img src="/static/1.jpg" alt="Top Image" class="top-image"
+                            style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                        <h1>phone Me</h1>
+
+                    </div>
+                    <h1 class="text-center mb-5 text-white">phone Us</h1>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h3 class="text-white">Let's Start a Conversation</h3>
+                            <p class="text-gray-300">Ask how we can help you:</p>
+                            <ul class="text-gray-300">
+                                <li>See our platform in action</li>
+                                <li>Master performance marketing</li>
+                                <li>Explore life at our company</li>
+                            </ul>
+                            <h4 class="text-white mt-4">Points of phone:</h4>
+                            <p class="text-gray-300">US | Company<br>
+                                1234 Address St.<br>
+                                City, State, ZIP</p>
+                            <p class="text-gray-300">Billing Inquiries: (+91) 6350207540</p>
+                            <p class="text-gray-300">Email: shlok.mathur2001@gmail.com</p>
+                            <h4 class="text-white mt-4">Chitrakoot:</h4>
+                            <p class="text-gray-300">jaipur<br>
+                                Kcc Nagar<br>
+                                Jaipur, 302026</p>
+                        </div>
+                        <div class="col-md-6">
+                            <form method="post" action="/contact">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="firstName" class="text-white">First Name</label>
+                                    <input type="text"
+                                        class="form-control transition duration-500 ease-in-out transform hover:scale-105"
+                                        id="firstName" name="firstName" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="text-white">Last Name</label>
+                                    <input type="text"
+                                        class="form-control transition duration-500 ease-in-out transform hover:scale-105"
+                                        id="lastName" name="lastName" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="text-white">phone No.</label>
+                                    <input type="phone"
+                                        class="form-control transition duration-500 ease-in-out transform hover:scale-105"
+                                        id="phone" name="phone" placeholder="Enter Your Whats App No.">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="text-white">Email</label>
+                                    <input type="email"
+                                        class="form-control transition duration-500 ease-in-out transform hover:scale-105"
+                                        id="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="country" class="text-white">Country</label>
+                                    <select
+                                        class="form-control transition duration-500 ease-in-out transform hover:scale-105"
+                                        id="country" name="country">
+                                        <script>
+                                            fetch('https://restcountries.com/v3.1/all')
+                                                .then(res => res.json())
+                                                .then(data => document.getElementById('country').innerHTML = data.map(c => `<option value="${c.cca2}">${c.name.common}</option>`).join(''))
+                                        </script>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                    <label for="desc">Tell me about what you want to phone me for...</label>
+                                    <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="desc" class="text-white">Desc</label>
+                                    <input type="desc"
+                                        class="form-control transition duration-500 ease-in-out transform hover:scale-105"
+                                        id="desc" name="desc" placeholder="desc">
+                                </div>
+
+                                <button type="submit"
+                                    class="btn btn-primary w-full bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">SEND
+                                    MESSAGE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+{% endblock body %}

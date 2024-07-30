@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block title %}My Portfolio{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border-radius: 15px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .card-header {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid py-3 bg-dark text-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="mb-0">Shlok Mathur</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="text-center">
+            <img src="/static/profile.jpeg" alt="Shlok Mathur" class="profile-pic shadow">
+            <h2 class="text-white">Shlok Mathur</h2>
+            <p class="lead text-white">Data Analyst | Web Developer | Python Enthusiast</p>
+        </div>
+        
+        <section id="about" class="my-5 text-white text-center">
+            <h3 class="text-4xl font-bold mb-4">About Me</h3>
+            <p>I am a Data Analyst with a strong background in Computer Science and Mathematics. I specialize in web development and have a passion for creating efficient and effective web solutions. With extensive experience in Python, SQL, PowerBI, and Ms Excel, I aim to deliver top-notch services and solutions.</p>
+        </section>
+
+        <section id="education" class="my-5">
+            <h3 class="text-3xl font-bold mb-4 text-center text-white">Education</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-primary">
+                        <div class="card-header">St. Anselm's Sr. Sec School</div>
+                        <div class="card-body">
+                            <p class="card-text">General Studies</p>
+                            <p class="card-text">H.K.G - 10th (2007 - 2018)</p>
+                        </div>
+                        <img src="/static/5.jpg" alt="St. Anselm's School">
+                        <img src="/static/ncc.jpeg" alt="St. Anselm's School">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-success">
+                        <div class="card-header">St. Edmund's School</div>
+                        <div class="card-body">
+                            <p class="card-text">Physics, Chemistry, Maths</p>
+                            <p class="card-text">12th Grade (2018 - 2020)</p>
+                        </div>
+                        <img src="/static/edmunds.jpg" alt="St. Edmund's School">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-info">
+                        <div class="card-header">Vellore Institute of Technology</div>
+                        <div class="card-body">
+                            <p class="card-text">Bachelor of Technology in Computer Science</p>
+                            <p class="card-text">Minors in Mathematics</p>
+                            <p class="card-text">Expected May 2024 | Cumulative GPA: 7.96/10</p>
+                        </div>
+                        <img src="/static/vit_pic.jpeg" alt="VIT">
+                        <img src="/static/vit.jpg" alt="VIT">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+{% endblock %}
